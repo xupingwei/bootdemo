@@ -7,18 +7,19 @@ import org.springframework.web.bind.annotation.RestController;
  * Created by xupingwei on 2017/5/3.
  */
 @RestController
+@RequestMapping(value = "/hello")
 public class HelloController {
 
-    @RequestMapping(name = "index")
+    @RequestMapping(value = "/index")
     public String index() {
         return "Hello world!";
     }
 
 
-//    @RequestMapping(name = "/say")
-//    public ModelAndView say() {
-//
-//        return new ModelAndView("Hello world!");
-//    }
+    @RequestMapping(value = "/say")
+    public String say() {
+
+        return new String("say Hello world!");
+    }
 
 }
