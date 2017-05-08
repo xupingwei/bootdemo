@@ -9,16 +9,16 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
-    @RequestMapping(name = "index")
-    public String index() {
-        return "Hello world!";
-    }
-
-
-//    @RequestMapping(name = "/say")
-//    public ModelAndView say() {
-//
-//        return new ModelAndView("Hello world!");
+//    @RequestMapping(name = "index")
+//    public String index() {
+//        return "Hello world!";
 //    }
+
+
+    @RequestMapping(name = "/say")
+    public String say() {
+
+        return ("Say xHello world!");
+    }
 
 }
